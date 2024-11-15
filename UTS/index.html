@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header>
+    <div class="main-container">
+      <div class="nav">
+        <div class="logo">
+          <a href="#">Putra<span>Izza</span></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Burger Menu Icon -->
+        <div class="burger" onclick="toggleMenu()" aria-label="Toggle Navigation">
+          <i data-feather="menu"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-container">
+          <div class="hero-left">
+            <div class="pre-title">-Welcome To My Portfolio</div>
+            <h1 class="hero-name">Putra Nur Izzatul Ramadhan</h1>
+            <p>Informatics Student & Tech Enthusiast from Tegal, Indonesia</p>
+            <a href="#about" class="btn-primary">More About Me</a>
+          </div>
+          <div class="hero-right">
+            <img src="img/izza.jpg" alt="Hero Image">
+          </div>
+        </div>
+      </section>
+      
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+          <div class="about-left">
+            <img src="img/putra.jpg" alt="About Image">
+          </div>
+          <div class="about-right">
+            <h2>About Us</h2>
+            <p>
+              Hi, I'm Putra Nur Izzatul Ramadhan you can call me <b>Izza</b>!
+            <br>
+            <p>
+              Saat ini saya sedang menempuh pendidikan di bidang Informatika, di mana saya mendalami dunia pengembangan perangkat lunak, ilmu data, dan segala hal yang berbau digital. Saya selalu bersemangat untuk belajar dan bereksperimen dengan teknologi baru, terutama teknologi yang dapat memberikan dampak positif pada lanskap digital kita yang terus berkembang.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+    <!-- End About Section -->
+
+    <!-- Project Section -->
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project-item">
+            <img src="img/Portfolio.png" alt="Project 1">
+            <div class="project-info">
+              <h3>My Personal Portfolio Website</h3>
+              <p>Ini adalah situs web portofolio pribadi saya, yang dirancang untuk memamerkan keterampilan, proyek, dan pencapaian saya di bidang Informatika. Situs ini berfungsi sebagai platform untuk berbagi perjalanan saya</p>
+              <a href="#" class="project-link">Learn More</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="img/Wordpress.png" alt="Project 2">
+            <div class="project-info">
+              <h3>Website with WordPress</h3>
+              <p>Dalam proyek ini, saya membuat situs web yang berfungsi penuh menggunakan WordPress. Situs ini dirancang agar mudah digunakan dan responsif, menunjukkan kemampuan saya dalam bekerja dengan platform CMS.</p>
+              <a href="https://putranurizzatulramadhan-ti-poltektegal.wordpress.com" class="project-link">Learn More</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="img/Tegal LakaLaka.png" alt="Project 3">
+            <div class="project-info">
+              <h3>TEGAL LAKALAKA Website</h3>
+              <p>TEGAL LAKALAKA adalah website yang saya kembangkan untuk menampilkan beragam tempat wisata dan kuliner khas Tegal. Proyek ini menyoroti keahlian saya dalam desain web dan hasrat saya untuk mempromosikan budaya lokal.</p>
+              <a href="https://izzacan.github.io/Tegal-Laka-Laka" class="project-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- End Project Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Have a question or just want to say hello??? <br>I'm always open to connecting! Feel free to reach out anytime.</p>
+            <ul>
+              <li><strong>Email:</strong> putranur.ir26@gmail.com</li>
+              <li><strong>Phone:</strong> 082316811681</li>
+              <li><strong>Address:</strong> JL.Slamet, Tegal, Indonesia</li>
+            </ul>
+            <div class="social-media">
+              <a href="https://www.instagram.com/putranur_ir" target="_blank" title="Instagram">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100054000023302" target="_blank" title="Facebook">
+                <i data-feather="facebook"></i>
+              </a>
+              <a href="https://x.com/putranur_IR" target="_blank" title="Twitter">
+                <i data-feather="twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/putra-nur-izzatul-r-73a188292/" target="_blank" title="LinkedIn">
+                <i data-feather="linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    <!-- End Contact Section -->
+
+<!-- Footer -->
+<footer>
+      <p>&copy; 2024 by Putra Nur Izzatul Ramadhan.</p>
+</footer>
+
+    <!-- end fotter -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
